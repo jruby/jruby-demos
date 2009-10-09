@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ruby.rubyproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/ruby-project/1">
+            <name>erubycon</name>
+            <source-roots>
+                <root id="src.ruby2java.dir"/>
+                <root id="src.ji.dir"/>
+                <root id="src.ir.dir"/>
+                <root id="src.dir" name="midi"/>
+                <root id="ffi.dir"/>
+                <root id="bench.dir"/>
+                <root id="1.9.dir"/>
+            </source-roots>
+            <test-roots/>
+        </data>
+    </configuration>
+</project>

@@ -1,0 +1,3 @@
+[submodule "jibernate"]
+	path = jibernate
+	url = git@github.com:headius/jibernate.git

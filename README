@@ -1,0 +1,6 @@
+This is a collection of demos given at recent conferences. I hope to expand
+this collection with additional demos for future events.
+
+The jibernate demo must be initialized with the following command:
+
+git submodule update --init
