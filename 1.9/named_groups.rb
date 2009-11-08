@@ -1,8 +1,8 @@
-str = "Welcome to Rails Underground"
+str = "Welcome to JRuby"
 
-regexp = /Welcome to (?<conf>Rails .*)/
+regexp = /Welcome to (?<ruby>\w*Ruby)/
 
 match = regexp.match(str)
 
-puts match['conf']
-puts "I hope you enjoyed #{match['conf']}"
+puts match['ruby']
+puts "I hope you enjoy using #{match['ruby']}"
