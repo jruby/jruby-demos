@@ -2,6 +2,8 @@ require 'ffi'
 
 module LibC
   extend FFI::Library
+  ffi_lib FFI::Library::LIBC
+  
   # A callback parameter type
   callback :qsort_cmp, [ :pointer, :pointer ], :int
   
@@ -9,7 +11,7 @@ module LibC
 end
 
 # build a native array of random numbers
-p = MemoryPointer.new(:int, 10)
+p = FFI::MemoryPointer.new(:int, 10)
 p.put_array_of_int32(0, (1..10).map {rand(50)})
 
 puts "Before qsort #{p.get_array_of_int32(0, 10).join(', ')}"
