@@ -18,4 +18,9 @@ end
 
 frame.visible = true
 
-synth.close
+## For IRB demos just type:
+# synth.close
+
+## Otherwise, this code just cleans up the synth on exit/window close
+frame.default_close_operation = frame.class::EXIT_ON_CLOSE
+frame.add_window_listener(java.awt.event.WindowListener.impl {|m,*a| synth.close if m == :windowClosing })
