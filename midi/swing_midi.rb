@@ -1,5 +1,3 @@
-require 'java'
-
 java_import javax.sound.midi.MidiSystem
 
 synth = MidiSystem.synthesizer

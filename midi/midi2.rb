@@ -13,6 +13,12 @@ channel = synth.channels[0]
 frame = JFrame.new("Music Frame")
 frame.set_size 300, 300
 frame.default_close_operation = JFrame::EXIT_ON_CLOSE
+frame.add_window_listener do |event|
+  if event.id == WindowEvent::WINDOW_CLOSED
+    synth.close
+    exit 0
+  end
+end
 
 # Listen for keystrokes, play notes
 frame.add_key_listener KeyListener.impl { |name, event|
