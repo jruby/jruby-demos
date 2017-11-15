@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import eu.hansolo.medusa.*?>
+<?import java.lang.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <Slider fx:id="slider" maxHeight="-Infinity" orientation="VERTICAL" prefHeight="100.0" prefWidth="242.0" showTickLabels="true" showTickMarks="true" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <FGauge fx:id="gauge" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
