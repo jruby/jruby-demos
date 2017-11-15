@@ -14,7 +14,7 @@ class GaugeController
   include JRubyFX::Controller
   fxml "gauge.fxml"
 
-  def initialize(*foo)
+  def initialize(*)
     @slider.value_property.add_listener do |slider|
       @gauge.gauge.value  = slider.value
     end
